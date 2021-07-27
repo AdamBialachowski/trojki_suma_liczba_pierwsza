@@ -8,6 +8,7 @@ using namespace std;
 int tab[1000][3];
 
 /////deklaracje funkcji
+
 void display_arrow(int t[][3], int s);
 void three_numbers(int& size, int tab[][3]);
 bool check_to_nuber_exist(int a, int b, int c, int s);
@@ -21,7 +22,7 @@ int main()
 	int size = 0; 
 
 
-	cout << "program który znajzie wszystkie trójki liczb.(doatnich, mniejszych od 20), których suma jest liczbą pierwszą. " <<"\n";
+	cout << "Trojki z ktorych po dodaniu otrzymamy liczby pierwsze." << endl;
 	
 	three_numbers(size, tab);
 	display_arrow(tab, size);	
@@ -93,5 +94,6 @@ bool it_is_prime_number(int l) {
 		return true;
 	}	
 }
+
 
 
